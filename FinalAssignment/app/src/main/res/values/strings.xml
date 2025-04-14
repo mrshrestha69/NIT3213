@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Final Assignment</string>
+    <string name="list_of_courses">List of Courses</string>
+    <string name="instructor_name">Instructor Name</string>
+    <string name="course_title">Course Title</string>
+</resources>

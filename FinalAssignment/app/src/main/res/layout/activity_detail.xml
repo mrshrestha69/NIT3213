@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="16dp"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="4dp"
+    android:padding="16dp"> <!-- Added padding to CardView -->
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp"> <!-- Added padding to ConstraintLayout to add spacing around the content -->
+
+        <!-- Course Code -->
+        <TextView
+            android:id="@+id/tvCourseCode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Course Code: CS101"
+            android:textSize="16sp"
+            android:textColor="#444444"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="16dp"/>
+
+        <!-- Course Name -->
+        <TextView
+            android:id="@+id/tvCourseName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Course Name: Introduction to Programming"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#222222"
+            app:layout_constraintTop_toBottomOf="@id/tvCourseCode"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="8dp"/>
+
+        <!-- Instructor Name -->
+        <TextView
+            android:id="@+id/tvInstructor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Instructor: Dr. Smith"
+            android:textSize="16sp"
+            android:textColor="#444444"
+            app:layout_constraintTop_toBottomOf="@id/tvCourseName"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="8dp"/>
+
+        <!-- Course Credits -->
+        <TextView
+            android:id="@+id/tvCredits"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Credits: 3"
+            android:textSize="16sp"
+            android:textColor="#444444"
+            app:layout_constraintTop_toBottomOf="@id/tvInstructor"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="8dp"/>
+
+        <!-- Course Description -->
+        <TextView
+            android:id="@+id/tvDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="A foundational course covering basic programming concepts and problem-solving techniques."
+            android:textSize="14sp"
+            android:textColor="#444444"
+            app:layout_constraintTop_toBottomOf="@id/tvCredits"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="16dp"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>
