@@ -12,16 +12,16 @@ import com.example.finalassignment.api.ApiClient
 import com.example.finalassignment.api.ApiService
 import com.example.finalassignment.models.DashboardResponse
 import com.example.finalassignment.models.EntityDetails
-//import dagger.hilt.android.AndroidEntryPoint
+import dagger.hilt.android.AndroidEntryPoint
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
-//import javax.inject.Inject
+import javax.inject.Inject
 
-//@AndroidEntryPoint
+@AndroidEntryPoint
 class DashboardActivity : AppCompatActivity() {
-//    @Inject
-//    lateinit var apiService: ApiService
+    @Inject
+    lateinit var apiService: ApiService
     private lateinit var recyclerView: RecyclerView
     private lateinit var adapter: MyAdapter
 
@@ -34,9 +34,9 @@ class DashboardActivity : AppCompatActivity() {
         recyclerView = findViewById(R.id.recyclerViewCourses)
         recyclerView.layoutManager = LinearLayoutManager(this)
 
-        // Initialize Retrofit
-        val retrofit = ApiClient.getRetrofitInstance()
-        val apiService = retrofit.create(ApiService::class.java)
+//        // Initialize Retrofit
+//        val retrofit = ApiClient.getRetrofitInstance()
+//        val apiService = retrofit.create(ApiService::class.java)
 
         // Get API data
         apiService.getEntities().enqueue(object : Callback<DashboardResponse> {

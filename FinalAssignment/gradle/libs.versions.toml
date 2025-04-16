@@ -1,5 +1,6 @@
 [versions]
 agp = "8.5.2"
+hiltAndroid = "2.52"
 kotlin = "1.9.22"
 coreKtx = "1.13.1"
 junit = "4.13.2"
@@ -27,6 +28,8 @@ retrofit = { module = "com.squareup.retrofit2:retrofit", version.ref = "retrofit
 androidx-recyclerview = { module = "androidx.recyclerview:recyclerview", version.ref = "recyclerview" }
 gson = { module = "com.google.code.gson:gson", version.ref = "gson" }
 converter-gson = { module = "com.squareup.retrofit2:converter-gson", version.ref = "converterGson" }
+hilt-android = { module = "com.google.dagger:hilt-android", version.ref = "hiltAndroid" }
+hilt-android-compiler = { module = "com.google.dagger:hilt-android-compiler", version.ref = "hiltAndroid" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
